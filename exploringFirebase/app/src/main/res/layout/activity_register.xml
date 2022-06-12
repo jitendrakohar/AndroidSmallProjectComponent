@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:layout_centerInParent="true"
+    android:paddingTop="50dp"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/welcomeApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:text="Welcome To Authentication system "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/tvRGGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/welcomeApp"
+        android:background="@color/purple_200"
+        android:paddingLeft="20dp"
+        android:text="GMAIL"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/etRGGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRGGmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your gmail here"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24dp" />
+
+
+    <TextView
+        android:id="@+id/tvRGPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRGGmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_200"
+        android:paddingLeft="20dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/etRGPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRGPassword"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your gmail here"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRGPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="Click here to Register"
+        android:textSize="22dp" />
+<TextView
+    android:id="@+id/tvlogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Already have account ? Login NOW "
+    android:layout_below="@+id/register"
+android:textColor="@color/white"
+    android:layout_marginTop="40dp"
+    android:textAlignment="center"
+    />
+</RelativeLayout>

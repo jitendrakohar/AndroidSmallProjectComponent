@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter the Details below!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:textSize="24sp"
+        android:layout_below="@id/texttitle"
+        android:inputType="textPersonName"
+
+        />
+
+    <EditText
+        android:id="@+id/Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:hint="Contact"
+        android:inputType="number"
+        android:textSize="24sp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DOB"
+        android:id="@+id/dob"
+        android:textSize="24sp"
+        android:layout_below="@id/Contact"
+        android:inputType="number"
+
+        />
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="24sp"
+        android:text="Insert New Data"
+        android:layout_below="@+id/dob"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="24sp"
+        android:text="Update New Data"
+        android:layout_below="@+id/btnInsert"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="24sp"
+        android:text="Delete this data"
+        android:layout_below="@+id/btnUpdate"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="24sp"
+        android:text="View the data"
+        android:layout_below="@+id/btnDelete"/>
+
+
+</RelativeLayout>
